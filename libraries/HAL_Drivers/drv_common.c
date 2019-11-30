@@ -141,7 +141,7 @@ RT_WEAK void rt_hw_board_init()
     rt_system_heap_init((void *)HEAP_BEGIN, (void *)HEAP_END);
 #endif
 
-    rt_memheap_init(&axi_sram_heap,"AXISRAM",(void *)RT_AXI_SRAM_BEGIN,RT_AXI_SRAM_SIZE);
+    //rt_memheap_init(&axi_sram_heap,"AXISRAM",(void *)RT_AXI_SRAM_BEGIN,RT_AXI_SRAM_SIZE);
 
     /* Pin driver initialization is open by default */
 #ifdef RT_USING_PIN
